@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     int q;
-    std::cin >> q;
+    scanf("%d",&q);
    // cin>>MAX_N;
     int MAX_N=1000002;
     int root_max_n=1000;
@@ -51,7 +51,7 @@ int main() {
     for(int t=1;t<=q;t++)
     {
         int n,m;
-        cin>>n>>m;
+        scanf("%d%d",&n,&m);
         int a=min(n,m);//here max/min is use to get rid of 9 7 from 7 9 because in both cases ans will vary according
         int b=max(n,m);//to implementation
         int c=0;
@@ -68,7 +68,7 @@ int main() {
 	    int c=cout_prime_arr[a]-cout_prime_arr[b-1];
 	    */
 	    
-        cout<<c<<endl;
+        printf("%d\n",c);
     }
 	return 0;
 }
