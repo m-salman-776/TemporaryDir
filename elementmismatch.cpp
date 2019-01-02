@@ -1,7 +1,7 @@
 /*
 https://practice.geeksforgeeks.org/problems/common-elements/0
 */
-
+/*this was working fine but was flagging wrong because inputs are not satisfying  constraints */*/
 
 #include <bits/stdc++.h>
 using namespace std;
