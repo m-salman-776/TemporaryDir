@@ -1,7 +1,4 @@
 /*https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0*/
-
-
-
 #include <bits/stdc++.h>
 using namespace std;
 int fun(int arr[],int i,int j);
