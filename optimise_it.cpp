@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// edited
 int check(int arr[],int n)
 {
     int c=0;
