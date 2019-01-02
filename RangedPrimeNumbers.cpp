@@ -3,7 +3,7 @@
 https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/hell-1/
 */
 
-//TLE after TestCase 53
+//TLE after TestCase 53 this problem was solved by taking fast input / output
 
 
 #include<bits/stdc++.h>
