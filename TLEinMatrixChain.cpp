@@ -92,4 +92,37 @@ int main() {
 	return 0;
 }
 
+//https://practice.geeksforgeeks.org/problems/padovan-sequence/0
+#include <bits/stdc++.h>
+using namespace std;
+#define m 1000000007
+int memory[200];
+int fun(int i)
+{
+    if(i==1|i==0|i==2)
+    return 1;
+    else if(memory[i]!=0)
+    return memory[i];
+    else return (memory[i]=(fun(i-2)%m+fun(i-3)%m)%m);
+}
+int main() {
+	//code
+	int T;
+	cin>>T;
+	//int memory[200];
+// 	memory[0]=memory[1]=memory[2]=1;
+// 	for(int i=3;i<=201;i++)
+// 	memory[i]=(memory[i-2]%m+memory[i-3]%m)%m;
+    memset(memory,0,sizeof(memory));
+	for(int t=0;t<T;t++)
+	{
+	    
+	    int n;
+	    cin>>n;
+	    cout<<fun(n)<<endl;
+	}
+	return 0;
+}
+
+
 */
