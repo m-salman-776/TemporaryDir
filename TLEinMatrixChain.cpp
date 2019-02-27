@@ -126,3 +126,29 @@ int main() {
 
 
 */
+
+//https://practice.geeksforgeeks.org/problems/number-of-unique-paths/0
+#include <bits/stdc++.h>
+using namespace std;
+int arr[16][16];
+int fun(int i,int j)
+{
+    if(i==0 || j==0)
+    return 1;
+    else if(arr[i][j]!=-1)
+    return arr[i][j];
+    else return (arr[i][j]=fun(i-1,j)+fun(i,j-1));
+}
+int main() {
+	//code
+	int T;
+	cin>>T;
+	memset(arr,-1,sizeof(arr));
+	for(int t=0;t<T;t++)
+	{
+	    int m,n;
+	    cin>>m>>n;
+	    cout<<fun(m-1,n-1)<<endl;
+	}
+	return 0;
+}
